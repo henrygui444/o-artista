@@ -1,45 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Poppins&display=swap');
+
+ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  font-family: 'Poppins';
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0a0a0a;
+  color: #ffffff;
 }
 
-header, #principal, #second, #contato, #stream {
-	
+
+header {
+  background-color: #1c1c1c;
+  padding: 20px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
-.link-menu {
-  color: #fff;
-  background-color: #555;
+
+nav {
+  background-color: #292929;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 15px 0;
 }
 
-.f {
-  background-color: #5b305a;
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-.l {
-  background-color: #e49756;
+nav a:hover {
+  color: #00c8ff;
 }
 
-.m {
-  background-color: #e04b5a;
-}
 
 main {
-  background-color: #333;
-  color: #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 50px 20px;
 }
 
-h1, h2 {
-  font-family: 'Amatic SC';
+
+main img {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+  border-radius: 12px;
 }
 
-#second a{
-  color: #fff;
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1100px;
 }
+
+
+.card {
+  background-color: #1c1c1c;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+}
+
+.card p {
+  font-size: 13px;
+  color: #cfcfcf;
+  padding: 0 8px 12px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
 
 footer {
-  background-color: #333;
-  color: #ddd;
+  background-color: #1c1c1c;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  margin-top: 50px;
 }
-
